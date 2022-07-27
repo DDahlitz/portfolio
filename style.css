@@ -1,48 +1,8 @@
 body{
     background-color: turquoise;
     margin: 0;
-}
-
-
-
-p{
-    border: solid black 1px;
-}
-
-h1{
-    border: solid black 1px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#header{
-	position: sticky;
-    top: 0px;
-    position: fixed;
-    padding: 0%;
-    margin: 0%; 
-}
-
-header {
-    position: sticky;
-    top: 0;
-    padding: 0%;
-    margin: 0%; 
-    max-width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .navbar {
@@ -51,12 +11,11 @@ header {
 }
 
 
-
 .navbar a {
     float: right;
     color: #f2f2f2;
     text-align: center;
-    padding: 18px 20px;
+    padding: 14px 11px;
     text-decoration: none;
     font-size: 17px;
 }
@@ -71,3 +30,160 @@ header {
     color: white;
 }
 
+#header{
+    position: sticky;
+    top: 0px;
+    position: fixed;
+    padding: 0%;
+    margin: 0%; 
+}
+
+header {
+    position: sticky;
+    top: 0;
+    padding: 0%;
+    margin: 0%; 
+    max-width: 100%;
+}
+
+
+#div0, #div1, #div2, #div3{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#div0 h1, #div1 h1, #div2 h1, #div3 h1  {
+    vertical-align: middle;
+    padding:5%;
+    margin: 0, auto;
+    text-align: center;
+}
+
+
+
+p{
+    border: solid black 1px;
+}
+
+h1{
+    border: solid black 1px;
+}
+
+div{
+    border: solid black 1px;
+}
+
+footer{
+    position: fixed;
+    margin-top: auto;
+    left: 0;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: black;
+    text-align: left;
+}
+
+.fa-brands{
+    display:inline-block;
+    font-size: 30px;
+    line-height: 40px;
+    background-color:black;
+    padding-left: 3%;
+    color:white;
+    height: auto;
+    vertical-align: bottom;
+    z-index: 2;
+}
+
+.carousel-container{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+/* ======= #div0 section ======== */
+
+/* ======= #div1 section ======== */
+
+/* ======= #div2 section ======== */
+#div2{
+    text-align: center;
+}
+
+.carousel-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.carousel-container > .carousel-item {
+	width: 50%;
+}
+
+
+/* ======= CAROUSEL SECTION ======== */
+
+
+
+.carousel-contain {
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.carousel-projects {
+	width: 80%;
+	background: #fa8d8e;
+	padding: 10px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	box-shadow: 2px 2px #f2cd99;
+}
+
+.carousel-projects .carousel-item {
+	width: 100%;
+	border-radius: 10px;
+	display: none;
+}
+
+.carousel-button {
+	align-self: center;
+	background: #f2cd99;
+	color: #888;
+	padding: 10px;
+	border-radius: 50%;
+	text-align: center;
+	box-shadow: 1px 1px #fa8d8e;
+}
+
+.carousel-button:hover {
+	cursor: pointer;
+	background: #fa8d8e;
+	box-shadow: 1px 1px #f2cd99;
+	color: white;
+}
+
+.carousel-projects .carousel-item:first-of-type {
+	display: block;
+}
+
+
+/* ======= #div3 section ======== */
+
+
+
+@media (min-width: 600px){
+
+}
+
+
+/* header nav bar medium/full screen  */
+
+@media (min-width: 800px){
+
+
+}
