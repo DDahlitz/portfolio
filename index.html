@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <header id="#header">
+    <header id="header">
         <nav class="navbar">
             <a id="about" class="active" href="#about">About Me</a>
             <a id="resume" class="" href="#resume">Resume</a>
@@ -23,16 +23,47 @@
 
     <div id="div0" class="container">
         <h1>About Me</h1>
-        <p>I am a software engineering student hoping to get into full stack development. Currently I'm working on school at GA and building my portfolio.</p>
-        <!-- <p></p> -->
-        <!-- <img src="" alt=""> -->
+        <div id="div0content">
+        <img src="photos/LinkedInPhoto.jpg" alt="">
+        <p>I am a software engineering student hoping to get into full stack development. Currently I'm working on school at GA and building my portfolio. I have experience working in stressful environments, triaging necessary tasks, and working on my own and with teams</p>
+        </div>
+
     </div>
 
     <div id="div1" class="container">
-        <h1>where worked/Resume</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sapiente ipsa fugiat error recusandae quam in sed dignissimos, nam voluptatem accusantium reprehenderit aut nobis doloremque animi consequatur non impedit? Doloribus.</p>
-        <!-- <p></p> -->
-        <!-- link to resume -->
+        <h1>Resume</h1>
+        <div id=" resumecontent">
+            <div class="resume-toggle">
+                <a id="ed" class="" href="#education">Education</a>
+                <a id="emp" class="" href="#employment">Employment</a>
+                <a id="int" class="" href="#interests">Interests</a>
+            </div>
+            <div class="resume-info">
+                <div id="education">
+                    <p>-EMT Certification, Riverside Community College , California
+                        2011</p>
+                    <p>-Basic Fire Academy, Riverside Community College 
+                        2013</p>
+                    <p>-Fire Science Associates Degree, Riverside Community College 2013</p>
+                    <p>- Paramedic Certification, NCTI, 2014</p>
+                </div>
+                <div id="employment">
+                    <p>-EMT, Lifeline Ambulance, Montebello CA
+                        July 17 2012 - February 18 2013
+                        February 26, 2014 - February 4, 2015
+                        </p>
+                    <p>-EMT, American Medical Response, Riverside CA
+                        July 6,2015 - May 14, 2016</p>
+                    <p>-Paramedic, American Medical Response, Riverside CA
+                        May 15, 2016 - Present Day</p>
+                </div>
+                <div id="interests">
+                    <p>-Wood working</p>
+                    <p>-Auto restoration</p>
+                    <p>-Hiking and Camping</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="div2" class="container">
@@ -44,7 +75,7 @@
                     <!-- previous button -->
                     <div class="carousel-button previous">
                         <!-- from linearicons icon font -->
-                        <span class="lnr lnr-chevron-left"></span>
+                        <i class="fa-solid fa-chevrons-left"></i>
                     </div>
                     <div class="carousel-projects">
                         <div class="carousel-item">
@@ -63,7 +94,7 @@
                     <!-- next button -->
                     <div class="carousel-button next">
                         <!-- from linearicons icon font -->
-                        <span class="lnr lnr-chevron-right"></span>
+                        <i class="fa-solid fa-chevrons-right"></i>
                 </div>
             </div>
         </div>
@@ -71,13 +102,14 @@
 
     <div id="div3" class="container">
         <h1>Contact Me</h1>
-        <p>I am currently not looking for new jobs, however my inbox is always open.</p>
-        <form action="mailto:ddahlitz@generalassemb.ly" method="post" enctype="text/plain" >
-            <input class="btn" type="submit" value="Submit"></button>
-        </form>
-        
+        <div id=" div3content">
+            <p>I am currently not looking for new jobs, however my inbox is always open.</p>
+            <form action="mailto:ddahlitz@generalassemb.ly" method="post" enctype="text/plain" >
+                <input class="btn" type="submit" value="Submit"></button>
+            </form>
+        </div>
     </div>    
-    <footer>
+    <footer id="footer">
         <!-- <p>social media</p> -->
         <i class="fa-brands fa-github"></i>
         <i class="fa-brands fa-linkedin"></i>

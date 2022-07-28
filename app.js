@@ -35,6 +35,31 @@ const displayContactMe = () => {
     $div3.show()
 }
 
+/*=============== resume buttons ===============*/
+
+$('#education').hide()
+$('#employment').hide()
+$('#interests').hide()
+
+const displayEducation = () => {
+    $('#employment').hide()
+    $('#interests').hide()
+    $('#education').show()
+}
+
+const displayEmployment = () => {
+    $('#interests').hide()
+    $('#education').hide()
+    $('#employment').show()
+
+}
+
+const displayInterests = () => {
+    $('#education').hide()
+    $('#employment').hide()
+    $('#interests').show()
+}
+
 /*=============== Portfolio Carousel ===============*/
 $(() => {
     let currentProject = 0
@@ -69,5 +94,8 @@ $('#about').on('click', displayAboutMe)
 $('#resume').on('click', displayResume)
 $('#projects').on('click', displayProjects)
 $('#contact-me').on('click', displayContactMe)
+$('#ed').on('click', displayEducation)
+$('#emp').on('click', displayEmployment)
+$('#int').on('click', displayInterests)
 
 })
