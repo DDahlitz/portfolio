@@ -1,8 +1,7 @@
 $(() => {
-
-     //
-
+    /*==============================================================*/
     /*======================= navbar buttons =======================*/
+    /*==============================================================*/
 
 $('a').addClass('inactive')
 $('a').first().removeClass('inactive').addClass('active')
@@ -11,16 +10,19 @@ const $div0 = $('#div0')
 const $div1 = $('#div1')
 const $div2 = $('#div2')
 const $div3 = $('#div3')
+
 $('#div1').hide()
 $('#div2').hide()
 $('#div3').hide()
 
-/*=========================================================================*/
-/*======================= navbar on hover functions =======================*/
-/*=========================================================================*/
-            //syntax found on stackoverflow
-            //has an issue with the jquery created classes
-            //if buttin is clicked it retains values of the inactive class while becoming an active class
+    /*=========================================================================*/
+    /*======================= navbar on hover functions =======================*/
+    /*=========================================================================*/
+            // syntax found on stackoverflow
+            // has an issue with the jquery created classes
+            // if buttin is clicked it retains values of the inactive class while becoming an active class
+            //colors changed in final version, if this function is active it retains the color of previous inactive class
+
 
     // $('.inactive').hover(function(){
     //     $(this).css('color', 'black');
@@ -30,7 +32,9 @@ $('#div3').hide()
     //     $(this).css('background-color', ' #333');
     // });
 
-/*======================= navbar on click functions =======================*/
+    /*=========================================================================*/
+    /*======================= navbar on click functions =======================*/
+    /*=========================================================================*/
 
 const displayAboutMe = () => {
     $div1.hide()
@@ -72,8 +76,9 @@ const displayContactMe = () => {
     $div3.show()
         $('#contact-me').addClass('active').removeClass('inactive')
 }
-
-/*======================= resume buttons =======================*/
+    /*=====================================================================*/
+    /*======================= resume buttons toggle =======================*/
+    /*=====================================================================*/
 
 $('#education').hide()
 $('#employment').hide()
@@ -81,24 +86,33 @@ $('#interests').hide()
 
 const displayEducation = () => {
     $('#employment').hide()
+        $('#emp').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
     $('#interests').hide()
+        $('#int').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
     $('#education').show()
+        $('#ed').css({'background-color': '#c7ccdb', 'color': '#2a324b'})
 }
-
 const displayEmployment = () => {
     $('#interests').hide()
+        $('#int').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
     $('#education').hide()
+        $('#ed').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
     $('#employment').show()
+        $('#emp').css({'background-color': '#c7ccdb', 'color': '#2a324b'})
 
 }
-
 const displayInterests = () => {
     $('#education').hide()
+        $('#ed').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
     $('#employment').hide()
+        $('#emp').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
     $('#interests').show()
+        $('#int').css({'background-color': '#c7ccdb', 'color': '#2a324b'})
 }
 
-/*======================= Portfolio Carousel =======================*/
+    /*==================================================================*/
+    /*======================= Portfolio Carousel =======================*/
+    /*==================================================================*/
 
 $(() => {
     let currentProject = 0
@@ -123,7 +137,19 @@ $(() => {
     })
 });
 
-/*======================= Function Calls =======================*/
+
+
+    /*===================================================================*/
+    /*======================= Submit Button Click =======================*/
+    /*===================================================================*/
+
+const btnClicked = () => {
+    $('.btn').css({'box-shadow': 'inset 0 0 10px #e1e5ee'})
+}
+
+    /*==============================================================*/
+    /*======================= Function Calls =======================*/
+    /*==============================================================*/
 
 // $('.navbar a').on('hover', hoverNavbar)
 $('#about').on('click', displayAboutMe)
@@ -133,4 +159,5 @@ $('#contact-me').on('click', displayContactMe)
 $('#ed').on('click', displayEducation)
 $('#emp').on('click', displayEmployment)
 $('#int').on('click', displayInterests)
+$('.btn').on('click', btnClicked)
 })
