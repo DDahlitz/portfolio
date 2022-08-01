@@ -390,6 +390,10 @@ footer{
         border-radius: 8px;
     }
 
+    #interests {
+        height: 400px;
+    }
+
     /* ======= #div2 section / Projects ======== */
 
     #div2 h1{

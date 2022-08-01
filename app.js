@@ -18,6 +18,7 @@ $('#div3').hide()
     /*=========================================================================*/
     /*======================= navbar on hover functions =======================*/
     /*=========================================================================*/
+
             // syntax found on stackoverflow
             // has an issue with the jquery created classes
             // if buttin is clicked it retains values of the inactive class while becoming an active class
@@ -136,8 +137,6 @@ $(() => {
         $('.carousel-projects').children().eq(currentProject).css('display', 'block')
     })
 });
-
-
 
     /*===================================================================*/
     /*======================= Submit Button Click =======================*/
