@@ -39,7 +39,7 @@ $('#div3').hide()
 
 const displayAboutMe = () => {
     $div1.hide()
-        $('#resume').removeClass('active').addClass('inactive')
+        $('#skills').removeClass('active').addClass('inactive')
     $div2.hide()
         $('#projects').removeClass('active').addClass('inactive')
     $div3.hide()
@@ -47,7 +47,7 @@ const displayAboutMe = () => {
     $div0.show()
         $('#about').addClass('active').removeClass('inactive')
 }
-const displayResume = () => {
+const displayskills = () => {
     $div2.hide()
         $('#projects').removeClass('active').addClass('inactive')
     $div3.hide()
@@ -55,7 +55,7 @@ const displayResume = () => {
     $div0.hide()
         $('#about').removeClass('active').addClass('inactive')
     $div1.show()
-        $('#resume').addClass('active').removeClass('inactive')
+        $('#skills').addClass('active').removeClass('inactive')
 }
 const displayProjects = () => {
     $div3.hide()
@@ -63,7 +63,7 @@ const displayProjects = () => {
     $div0.hide()
         $('#about').removeClass('active').addClass('inactive')
     $div1.hide()
-        $('#resume').removeClass('active').addClass('inactive')
+        $('#skills').removeClass('active').addClass('inactive')
     $div2.show()
         $('#projects').addClass('active').removeClass('inactive')
 }
@@ -71,14 +71,14 @@ const displayContactMe = () => {
     $div0.hide()
         $('#about').removeClass('active').addClass('inactive')
     $div1.hide()
-        $('#resume').removeClass('active').addClass('inactive')
+        $('#skills').removeClass('active').addClass('inactive')
     $div2.hide()
         $('#projects').removeClass('active').addClass('inactive')
     $div3.show()
         $('#contact-me').addClass('active').removeClass('inactive')
 }
     /*=====================================================================*/
-    /*======================= resume buttons toggle =======================*/
+    /*======================= skills buttons toggle =======================*/
     /*=====================================================================*/
 
 $('#education').hide()
@@ -87,28 +87,28 @@ $('#interests').hide()
 
 const displayEducation = () => {
     $('#employment').hide()
-        $('#emp').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
+        $('#emp').css({'background-color': '#000', 'color': '#c7ccdb'})
     $('#interests').hide()
-        $('#int').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
+        $('#int').css({'background-color': '#000', 'color': '#c7ccdb'})
     $('#education').show()
-        $('#ed').css({'background-color': '#c7ccdb', 'color': '#2a324b'})
+        $('#ed').css({'background-color': '#c7ccdb', 'color': '#000'})
 }
 const displayEmployment = () => {
     $('#interests').hide()
-        $('#int').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
+        $('#int').css({'background-color': '#000', 'color': '#c7ccdb'})
     $('#education').hide()
-        $('#ed').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
+        $('#ed').css({'background-color': '#000', 'color': '#c7ccdb'})
     $('#employment').show()
-        $('#emp').css({'background-color': '#c7ccdb', 'color': '#2a324b'})
+        $('#emp').css({'background-color': '#c7ccdb', 'color': '#000'})
 
 }
 const displayInterests = () => {
     $('#education').hide()
-        $('#ed').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
+        $('#ed').css({'background-color': '#000', 'color': '#c7ccdb'})
     $('#employment').hide()
-        $('#emp').css({'background-color': '#2a324b', 'color': '#c7ccdb'})
+        $('#emp').css({'background-color': '#000', 'color': '#c7ccdb'})
     $('#interests').show()
-        $('#int').css({'background-color': '#c7ccdb', 'color': '#2a324b'})
+        $('#int').css({'background-color': '#c7ccdb', 'color': '#000'})
 }
 
     /*==================================================================*/
@@ -152,7 +152,7 @@ const btnClicked = () => {
 
 // $('.navbar a').on('hover', hoverNavbar)
 $('#about').on('click', displayAboutMe)
-$('#resume').on('click', displayResume)
+$('#skills').on('click', displayskills)
 $('#projects').on('click', displayProjects)
 $('#contact-me').on('click', displayContactMe)
 $('#ed').on('click', displayEducation)

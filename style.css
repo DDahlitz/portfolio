@@ -1,6 +1,6 @@
 body{
     font-family: Monserat;
-    background-color: #f7c59f;
+    background-color: #fff;
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -13,30 +13,36 @@ a {
 
 
 .navbar {
-    background-color: #2a324b;
+    background-color: #000;
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 
-
-.navbar a {
+.navbar ul a {
     float: right;
-    color: #e1e5ee;
+    color: #fff;
     text-align: center;
     padding: 14px 8px;
     text-decoration: none;
     font-size: 17px;
 }
 
-.navbar a:hover {
-    background-color: #767B91;
-    color: #e1e5ee;
+.navbar ul a:hover {
+    background-color: #000;
+    color: #fff;
 }
 
-.navbar a.active {
-    background-color: #c7ccdb;
-    color: #2a324b;
+.navbar ul a.active {
+    background-color: #fff;
+    color: #000;
 }
 
+ul{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
 #header{
     position: sticky;
@@ -96,7 +102,7 @@ footer{
     bottom: 0;
     height: 8%;
     width: 100%;
-    background-color: #2a324b;
+    background-color: #000;
     text-align: left;
 }
 
@@ -104,9 +110,9 @@ footer{
     display:inline-block;
     font-size: 30px;
     line-height: 40px;
-    background-color:#2a324b;
+    background-color:#000;
     padding-left: 3%;
-    color:#e1e5ee;
+    color:#fff;
     height: auto;
     vertical-align: bottom;
     z-index: 2;
@@ -164,7 +170,7 @@ footer{
     }
 
 
-/* ======= #div1 section / Resume ======== */
+/* ======= #div1 section / skills ======== */
 
 
 
@@ -181,12 +187,24 @@ footer{
     text-align: center;
 }
 
-#divresumecontent{
+#divskillscontent{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 70%;
+}
+#education {
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    width: 100%;
+}
+
+#education ul {
+    width: 50%;
+    flex-direction: row;
+    align-items: space-around;
 }
 
 #interests p, #employment p, #education p {
@@ -194,11 +212,11 @@ footer{
     padding-bottom: 5%;
 }
 
-.resume-toggle{
+.skills-toggle{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #2a324b;
+    background-color: #000;
     padding-top: 5%;
     padding-bottom: 5%;
     border-radius: 20px;
@@ -207,22 +225,22 @@ footer{
     margin-bottom: 10%;
 }
 
-.resume-toggle a{
+.skills-toggle a{
     border-radius: 5px;
     text-decoration: none;
-    color: #c7ccdb;
+    color: #fff;
     padding: 5px;
 }
 
 
-.resume-info{
+.skills-info{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color:#c7ccdb;
-    color: #2a324b;
+    background-color:#fff;
+    color: #000;
     border-radius: 20px;
-    box-shadow: 3px 3px #767b91;
+    box-shadow: 3px 3px #000;
     margin-right: 10%;
     margin-left: 10%;
 }
@@ -271,11 +289,11 @@ footer{
     align-items: center;
 	width: 80%;
     height: 60%;
-	background: #c7ccdb;
+	background: #fff;
 	padding: 10px;
 	border-radius: 10px;
 	box-sizing: border-box;
-	box-shadow: 4px 4px 10px  #2a324b;
+	box-shadow: 4px 4px 10px  #000;
 }
 
 .carousel-projects .carousel-item {
@@ -286,7 +304,7 @@ footer{
 
 .carousel-button {
 	align-self: center;
-	color: #888;
+	color: #fff;
 	padding: 10px;
 	text-align: center;
 }
@@ -366,9 +384,9 @@ footer{
         width: 150px;
         border-radius: 15px;
         border: none;
-        color: #e1e5ee;
-        background-color: #2a324b;
-        box-shadow: 3px 3px 3px 3px #767b91;
+        color: #fff;
+        background-color: #000;
+        box-shadow: 3px 3px 3px 3px #000;
 }
 
 @media (min-width: 600px){
@@ -383,9 +401,9 @@ footer{
         max-width: 300px;
     }
 
-    /* ======= #div1 section / Resume ======== */
+    /* ======= #div1 section / skills ======== */
 
-    .resume-toggle a{
+    .skills-toggle a{
         font-size: 1.5rem;
         border-radius: 8px;
     }
@@ -413,12 +431,12 @@ footer{
         justify-content: center;
         align-items: center;
         align-self: center;
-        background: #c7ccdb;
-        color: #888;
+        background: #fff;
+        color: #fff;
         padding: 10px;
         border-radius: 20%;
         text-align: center;
-        box-shadow: 1px 1px #767b91;
+        box-shadow: 1px 1px #000;
     }
 
     .carousel-button i {
@@ -444,9 +462,9 @@ footer{
 
     .carousel-button:hover {
         cursor: pointer;
-        background: #2a324b;
-        box-shadow: 1px 1px #2a324b;
-        color: white;
+        background: #000;
+        box-shadow: 1px 1px #000;
+        color: #fff;
     }
     
     /* ======= #div3 section / Contact Me ======== */
@@ -493,16 +511,16 @@ footer{
         max-width: 400px;
     }
 
-    /* ======= #div1 section / Resume ======== */
+    /* ======= #div1 section / skills ======== */
 
-    #resumecontent{
+    #skillscontent{
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: row;
     }
 
-    .resume-toggle {
+    .skills-toggle {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -514,7 +532,7 @@ footer{
         margin-left: 2%;
     }
 
-    .resume-toggle a{
+    .skills-toggle a{
         padding-top: 25px;
         padding-bottom: 25px;
         padding-left: 125px;
@@ -522,7 +540,7 @@ footer{
         text-decoration: none;
     }
 
-    .resume-info{
+    .skills-info{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -535,7 +553,7 @@ footer{
         margin-left: 0%;
     }
 
-    .resume-info p{
+    .skills-info p{
         padding-top: 25px;
         padding-bottom: 25px;
     }

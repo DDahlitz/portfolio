@@ -21,10 +21,15 @@
 <body>
     <header id="header">
         <nav class="navbar">
-            <a id="about" class="" href="#about">About Me</a>
-            <a id="resume" class="" href="#resume">Resume</a>
-            <a id="projects" class="" href="#projects">Projects</a>
-            <a id="contact-me" class="" href="#contact-me">Contact Me</a>
+            <ul>
+                <a href="photos/DerrickDahlitzResume.docx" target="_blank">Resume</a>
+            </ul>
+            <ul>
+                <a id="about" class="" href="#about">About Me</a>
+                <a id="skills" class="" href="#skills">Skills</a>
+                <a id="projects" class="" href="#projects">Projects</a>
+                <a id="contact-me" class="" href="#contact-me">Contact Me</a>
+            </ul>
         </nav>
     </header>
 
@@ -32,41 +37,43 @@
         <h1>About Me</h1>
         <div id="div0content">
         <img src="photos/LinkedInPhoto.jpg" alt="Photo of Derrick">
-        <p>I am a software engineering student hoping to get into full stack development. Currently I'm working on school at GA and building my portfolio. I have experience working in stressful environments, triaging necessary tasks, and working on my own and with teams</p>
+        <p>I am a Full-Stack Software Engineer with a background in EMS. I am goal-oriented with a proven ability to succeed in fast paced and high stress environments. I address every situation analytically and creatively to find the best solutions.</p>
         </div>
     </div>
 
     <div id="div1" class="container">
-        <h1>Resume</h1>
-        <div id=" resumecontent">
-            <div class="resume-toggle">
-                <a id="ed" class="" href="#education">Education</a>
-                <a id="emp" class="" href="#employment">Employment</a>
-                <a id="int" class="" href="#interests">Interests</a>
+        <h1>Skills</h1>
+        <div id=" skillscontent">
+            <div class="skills-toggle">
+                <a id="ed" class="" href="#education">Languages</a>
+                <a id="emp" class="" href="#employment">Libraries and Frameworks</a>
+                <a id="int" class="" href="#interests">Databases</a>
             </div>
-            <div class="resume-info">
+            <div class="skills-info">
                 <div id="education">
-                    <p>EMT Certification, Riverside Community College , California
-                        2011</p>
-                    <p>Basic Fire Academy, Riverside Community College 
-                        2013</p>
-                    <p>Fire Science Associates Degree, Riverside Community College 2013</p>
-                    <p> Paramedic Certification, NCTI, 2015</p>
+                    <ul>
+                        <p>Javascript</p>
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Python</p>
+                    </ul>
+                    <ul>
+                        <p>SQL</p>
+                        <p>Mongo</p>
+                        <p>JSON</p>
+                        <p>Typescript</p>
+                        <p>EJS</p>
+                    </ul>
                 </div>
                 <div id="employment">
-                    <p>EMT, Lifeline Ambulance, Montebello CA
-                        July 17 2012 - February 18 2013
-                        February 26, 2014 - February 4, 2015
-                        </p>
-                    <p>EMT, American Medical Response, Riverside CA
-                        July 6,2015 - May 14, 2016</p>
-                    <p>Paramedic, American Medical Response, Riverside CA
-                        May 15, 2016 - Present Day</p>
+                    <p>React</p>
+                    <p>Express.js</p>
+                    <p>Django</p>
+                    <p>Bootstrap</p>
                 </div>
                 <div id="interests">
-                    <p>Wood working</p>
-                    <p>Auto restoration</p>
-                    <p>Hiking and Camping</p>
+                    <p>PostgreSQL</p>
+                    <p>MongoDB</p>
                 </div>
             </div>
         </div>
@@ -85,16 +92,32 @@
                     </div>
                     <div class="carousel-projects">
                         <div class="carousel-item">
-                    <h3>Project 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium corrupti nesciunt ut delectus unde illum! Mollitia tempore facilis aliquid, sed, accusamus dolore molestiae corrupti quod sequi, ab odit adipisci in.</p>
+                            <a href="https://job-tracker-wbhh.onrender.com/" target="_blank"><h3>Job Tracker</h3></a>
+                            <p>Job Tracker website with login, authentication, and full CRUD capability</p>
+                            <p>Made with the MERN Stack using: React, MongoAtlas, HTML, CSS, Javascript, Node.js, Express, Render </p>
+                            <p>
+                                <strong>Username:</strong> 
+                                test@gmail.com
+                            </p>
+                            <p>
+                                <strong>Password:</strong> 
+                                asdfasdf
+                            </p>
                         </div>
                         <div class="carousel-item">
-                    <h3>Project 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nostrum iste nulla voluptates omnis dicta dolorum soluta vel tempora. Doloribus ab hic impedit corrupti eligendi aut laboriosam dignissimos quis nisi.</p>
+                            <a href="https://news-project-front.herokuapp.com/" target="_blank"><h3>Satire News Site</h3></a>
+                            <p>Group project that is a satire website with a proof of concept login, and full CRUD capability</p>
+                            <p>Made with the MERN Stack using: React, MongoAtlas, HTML, CSS, Javascript, Node.js, Bootstrap, Express, Heroku </p>
                         </div>
                         <div class="carousel-item">
-                    <h3>Project 3</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis debitis reprehenderit, explicabo cum voluptates dolores quas, voluptatem ut fugiat laborum sed. Minus soluta accusamus asperiores molestias consequuntur eum velit ipsam!</p>
+                            <a href="https://powerful-stream-78129.herokuapp.com/bookworm" target="_blank"><h3>Book Catalogue</h3></a>
+                            <p>Basic CRUD app for a book catalog that people can use to show books they own and their wishlist.</p>
+                            <p>Made using: HTML, CSS, Javascript, Jquery,MongoAtlas, Node.js, Bootstrap, Express, Heroku</p>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="https://rocky-caverns-64581.herokuapp.com/" target="_blank"><h3>Trello Clone</h3></a>
+                            <p>Basic CRUD app to ToDo list.</p>
+                            <p>Made using: HTML, CSS, Javascript, Django, Express, Heroku, and Tailwind</p>
                         </div>
                     </div>
                     <!-- next button -->
